@@ -405,9 +405,9 @@
     }
 }
 
-- (void)setScale:(NSInteger)scale {
+- (void)setScale:(CGFloat)scale {
     _scale = scale;
-    [self setZoomScale:_scale];
+    [self setZoomScale:_scale animated:YES];
 }
 
 #pragma mark - Private
